@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerContainer,
+.addListItemsForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContainer {
+  margin-top: 5rem;
+}
+
+.actionItemContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
