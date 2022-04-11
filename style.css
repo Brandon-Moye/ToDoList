@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(#ff6686, #ff0035);
+  height: 100vh;
+}
+
 .headerContainer,
 .addListItemsForm {
   display: flex;
@@ -15,6 +20,9 @@
   margin-top: 5rem;
 }
 
+.addListItemsForm {
+  margin-bottom: 2.5rem;
+}
 .actionItemContainer {
   display: flex;
   justify-content: center;
