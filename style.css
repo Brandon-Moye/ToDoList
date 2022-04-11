@@ -9,23 +9,114 @@ body {
   height: 100vh;
 }
 
-.headerContainer,
-.addListItemsForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .headerContainer {
   margin-top: 5rem;
 }
 
+.headerContainer,
 .addListItemsForm {
-  margin-bottom: 2.5rem;
-}
-.actionItemContainer {
+  /* min-height: 20vh; */
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
+}
+
+.addListItemsForm {
+  /* width: 30rem; */
+  min-width: 50vh;
+  margin-bottom: 5rem;
+}
+
+.input {
+  border: none;
+  height: 3rem;
+  width: 30rem;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.submit-button {
+  background: white;
+  border: none;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: green;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  min-width: 30%;
+  list-style-type: none;
+}
+
+.actionItemContainer {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  border-radius: 30px;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.actionItemContainer li {
+  flex: 1;
+}
+
+.fa-plus,
+.fa-minus,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  background: green;
+  color: white;
+  text-decoration: line-through;
+  /* opacity: 30%; */
+}
+
+.completeButton,
+.deleteButton {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.completeButton:hover {
+  background: green;
+  color: white;
+}
+
+.deleteButton:hover {
+  background: #ff0035;
+  color: white;
+}
+
+.deleteButton {
+  margin-right: 0.25rem;
 }
